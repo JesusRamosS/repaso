@@ -14,6 +14,12 @@ public class Alumno {
         nombre = nombreCompleto;
         numeroMatricula = numeroMatriculaAlumno;
         edad = edadAlumno;
+        if (numeroMatricula.length() < 4){
+            System.out.println("ERROR. el numero de matricula introducido es demasiado corto");
+        }
+        if (nombre.length() < 3){
+            System.out.println("ERROR. el nombre introducido es demasiado corto");
+        }
     }
 
     /**
